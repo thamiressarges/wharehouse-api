@@ -11,5 +11,7 @@ namespace wharehouse_api.Models
         public string? ImageUrl { get; set; }
         public double Stock { get; set; }
         public DateTime RegistrationDate { get; set; }
+        public int CategoryId { get; set; }
+        public Category? Category { get; set; }
     }
 }
