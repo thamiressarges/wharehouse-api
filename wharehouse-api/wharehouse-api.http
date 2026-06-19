@@ -1,0 +1,6 @@
+@wharehouse_api_HostAddress = http://localhost:5087
+
+GET {{wharehouse_api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
