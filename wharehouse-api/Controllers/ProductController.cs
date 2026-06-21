@@ -54,7 +54,7 @@ namespace wharehouse_api.Controllers
         [HttpPut("{id:int}")]
         public ActionResult Put(int id, Product product)
         {
-            if(product.Id == id)
+            if(product.Id != id)
             {
                 return BadRequest();
             }
