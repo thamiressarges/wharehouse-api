@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace wharehouse_api.Models
@@ -29,6 +30,8 @@ namespace wharehouse_api.Models
         public double Stock { get; set; }
         public DateTime RegistrationDate { get; set; }
         public int CategoryId { get; set; }
+
+        [JsonIgnore]
         public Category? Category { get; set; }
     }
 }
